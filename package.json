@@ -5,7 +5,7 @@
     "dev": "astro dev"
   },
   "dependencies": {
-    "astro": "^5.4.0",
+    "astro": "^5.12.3",
     "astro-embed": "^0.9.0",
     "zod": "^4.0.10"
   },
