@@ -3,3 +3,18 @@ import { LinkPreview } from "astro-embed";
 ---
 
 <LinkPreview id="https://astro.build/blog/welcome-world/" />
+
+<script>
+    // Example code to require zod dep.
+    import { z } from "zod";
+
+    const schema = z.object({
+        title: z.string().min(2).max(100),
+        description: z.string().min(2).max(500),
+    });
+
+    schema.parse({
+        title: "Astro",
+        description: "The future of web development",
+    });
+</script>
